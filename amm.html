@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AM FASHION STORE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2c2c2c;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .top-header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .top-header .header-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 30px;
+      padding: 5px 15px;
+      flex-grow: 1;
+      max-width: 600px;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .search-bar img {
+      width: 20px;
+      margin-left: 10px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .icons img {
+      width: 20px;
+      filter: invert(1);
+    }
+
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #555;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .navbar > div, .navbar a {
+      position: relative;
+      margin-right: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      z-index: 1;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      color: black;
+      width: 1000px;
+      padding: 20px;
+      justify-content: space-between;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+
+    .dropdown-column {
+      width: 22%;
+    }
+
+    .dropdown-column h4 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .dropdown-column a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .dropdown-column strong {
+      font-weight: bold;
+    }
+
+    .dropdown-column img {
+      width: 100%;
+      height: auto;
+    }
+
+    .banner-text {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="top-header">
+    <div class="logo">AM FASHION STORE</div>
+    <div class="header-links">
+      <a href="#">WOMEN</a>
+      <a href="#">MEN</a>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for items and brands">
+      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="search">
+    </div>
+    <div class="icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="search">
+      <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="user">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="heart">
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="cart">
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+
+    <!-- TRENDING -->
+    <div class="dropdown">
+      <a>TRENDING</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><img src="https://via.placeholder.com/140x180?text=Summer+Sequins"><div class="banner-text">SUMMER SEQUINS</div></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/140x180?text=Beachy+Bliss"><div class="banner-text">BEACHY BLISS</div></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/140x180?text=Sophisticated+Summer"><div class="banner-text">SOPHISTICATED SUMMER</div></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/140x180?text=Matching+Sets"><div class="banner-text">MATCHING SETS</div></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/140x180?text=Must+Have+Accessories"><div class="banner-text">MUST HAVE ACCESSORIES</div></div>
+      </div>
+    </div>
+
+    <!-- NEW IN -->
+    <div class="dropdown">
+      <a>NEW IN</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><h4>WHAT’S NEW</h4><a href="#">New in: Today</a><a href="#">View all</a><a href="#">Clothing</a><a href="#">Dresses</a><a href="#">Shoes</a><a href="#">Sneakers</a><a href="#">Accessories</a></div>
+        <div class="dropdown-column"><h4>THE VACATION SHOP</h4><a href="#">Beachy Bliss</a><a href="#">Vacay Dresses</a><a href="#">Swim</a><a href="#">Euro Summer</a></div>
+        <div class="dropdown-column"><h4>BRANDS NEW IN</h4><a href="#">ARRANGE</a><a href="#">Abercrombie & Fitch</a><a href="#">Free People</a><a href="#">Good American</a><a href="#">MANGO</a><a href="#">Oh Polly</a><a href="#">Princess Polly</a></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/160x200?text=WEWOREWHAT"><div class="banner-text">JUST LANDED: WEWOREWHAT</div></div>
+      </div>
+    </div>
+
+    <!-- CLOTHING -->
+    <div class="dropdown">
+      <a>CLOTHING</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><h4>SHOP BY PRODUCT</h4><a href="#">New in</a><a href="#"><strong>Bestsellers</strong></a><a href="#">Dresses</a><a href="#">Blouses</a><a href="#">Tops</a><a href="#">Shorts</a><a href="#">Skirts</a><a href="#">Swimwear & Beachwear</a><a href="#">Pants & Leggings</a><a href="#">Jeans</a><a href="#">Activewear</a><a href="#">Two-piece sets</a><a href="#">Hoodies & Sweatshirts</a><a href="#">Coats & Jackets</a></div>
+        <div class="dropdown-column"><br><br><a href="#">Sweaters & Cardigans</a><a href="#">Jumpsuits & Rompers</a><a href="#">Lingerie & Sleepwear</a><a href="#">Loungewear</a><a href="#">Shirts</a><a href="#">Suits & Tailoring</a><a href="#">Blazers</a><a href="#">Curve & Plus size</a><a href="#">Maternity</a><a href="#">Petite</a><a href="#">Tall</a><a href="#">ASOS Basics</a><a href="#"><strong>Top Rated Clothing</strong></a><a href="#">Last chance to buy</a></div>
+        <div class="dropdown-column"><h4>SHOP BY OCCASION</h4><a href="#">Wedding Guest</a><a href="#">Office Attire</a><a href="#">Vacation & Resort</a><a href="#">Festival</a><a href="#">Modest fashion</a><a href="#">Prom</a></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/160x200?text=Make+It+A+Set"><div class="banner-text">MAKE IT A SET</div></div>
+      </div>
+    </div>
+
+    <!-- DRESSES -->
+    <div class="dropdown">
+      <a>DRESSES</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><h4>BY TYPE</h4><a href="#">Mini Dresses</a><a href="#">Midi Dresses</a><a href="#">Maxi Dresses</a><a href="#">Bodycon</a><a href="#">Wrap Dresses</a><a href="#">Shirt Dresses</a></div>
+        <div class="dropdown-column"><h4>BY OCCASION</h4><a href="#">Party Dresses</a><a href="#">Casual</a><a href="#">Wedding</a><a href="#">Vacation</a></div>
+        <div class="dropdown-column"><h4>FEATURED</h4><a href="#">New Arrivals</a><a href="#">Best Sellers</a><a href="#">Editor’s Pick</a></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/160x200?text=Hot+Looks"><div class="banner-text">DRESS TO IMPRESS</div></div>
+      </div>
+    </div>
+
+    <!-- SHOES -->
+    <div class="dropdown">
+      <a>SHOES</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><h4>BY STYLE</h4><a href="#">Heels</a><a href="#">Flats</a><a href="#">Sandals</a><a href="#">Boots</a><a href="#">Sneakers</a><a href="#">Loafers</a></div>
+        <div class="dropdown-column"><h4>FEATURED</h4><a href="#">New In</a><a href="#">Best Sellers</a><a href="#">Summer Picks</a></div>
+        <div class="dropdown-column"><h4>TOP BRANDS</h4><a href="#">Nike</a><a href="#">Adidas</a><a href="#">Steve Madden</a></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/160x200?text=Step+Up"><div class="banner-text">SHOE EDIT</div></div>
+      </div>
+    </div>
+
+    <!-- PLUS SIZE -->
+    <div class="dropdown">
+      <a>PLUS SIZE</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><h4>CLOTHING</h4><a href="#">Dresses</a><a href="#">Tops</a><a href="#">Bottoms</a><a href="#">Outerwear</a></div>
+        <div class="dropdown-column"><h4>FEATURED</h4><a href="#">Curve Collection</a><a href="#">Trending</a></div>
+        <div class="dropdown-column"><h4>OCCASIONS</h4><a href="#">Workwear</a><a href="#">Casual</a><a href="#">Evening</a></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/160x200?text=Curve"><div class="banner-text">PLUS STYLE PICKS</div></div>
+      </div>
+    </div>
+
+    <!-- ACTIVEWEAR -->
+    <div class="dropdown">
+      <a>ACTIVEWEAR</a>
+      <div class="dropdown-content">
+        <div class="dropdown-column"><h4>TOPS & BRAS</h4><a href="#">Sports Bras</a><a href="#">Crop Tops</a><a href="#">T-Shirts</a></div>
+        <div class="dropdown-column"><h4>BOTTOMS</h4><a href="#">Leggings</a><a href="#">Joggers</a><a href="#">Shorts</a></div>
+        <div class="dropdown-column"><h4>FEATURED</h4><a href="#">Yoga Edit</a><a href="#">Running Essentials</a></div>
+        <div class="dropdown-column"><img src="https://via.placeholder.com/160x200?text=Move"><div class="banner-text">FITNESS FAVORITES</div></div>
+      </div>
+    </div>
+
+    <!-- Static Items -->
+    <a href="#">Accessories</a>
+    <a href="#">Brands</a>
+    <a href="#">Wedding Shop</a>
+    <a href="#">Beauty</a>
+    <a href="#">SALE</a>
+
+  </div>
+
+</body>
+</html>
